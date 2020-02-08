@@ -1,17 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Bond Bag Store</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, width=device-width"
+    />
+    <meta
+      name="description"
+      content="Responsive Bootstrap 4 Template For Your Flower Shop"
+    />
+    <meta
+      name="keywords"
+      content="flower, shop, ecommerce, florist, bouquet, boutique, online, store, bootstrap, responsive, decoration, bouquet shop, decoration shop, flower boutique, flower shop, flower store, flowers"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Petit+Formal+Script"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.min.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://jolie-flowers.amaxcode.com/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://jolie-flowers.amaxcode.com/img/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-119687618-5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-119687618-5");
+    </script>
   </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+  <body class="jolie-flowers">
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <nav class="navbar navbar-expand-md top-nav">
+      <div class="container">
+        <!-- Left Side Nav Items -->
+        <div class="nav-col">
+          <!-- Navbar toggler. Shown for mobile devices (https://getbootstrap.com/docs/4.0/components/navbar/#toggler) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#topNav"
+            aria-controls="topNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <ion-icon name="md-call"></ion-icon>
+          </button>
+
+          <div class="collapse navbar-collapse" id="topNav">
+            <div>
+              <!-- Mobile Nav Close Icon -->
+              <a
+                href="index.html#"
+                class="close-navbar-mobile"
+                data-toggle="collapse"
+                data-target="#topNav"
+              >
+                <ion-icon name="md-close"></ion-icon>
+              </a>
+
+              <!-- Mobile Nav -->
+              <div class="d-md-none mobile-nav-block">
+                <div class="phone-info-mobile">
+                  <ion-icon name="md-call"></ion-icon>086-948-1230
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <a class="nav-logo" href="https://jolie-flowers.amaxcode.com/"
+          >Bond Bag Store</a
+        >
+
+        <!-- Right Side Nav Items -->
+        <div class="nav-col">
+          <ul class="nav-list nav-list-right">
+            <li class="d-none d-md-block">
+              <a id="getPhoneNumber"
+                ><ion-icon name="md-call"></ion-icon>
+                <span class="underline-hover">086-948-1230</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home page content-->
+    <section class="top-banner">
+      <div class="container">
+        <div class="top-banner-text">
+          <img class="bg-img" src="img/top-banner.png" alt="" />
+          <div>
+            <!-- Desctop and Tablet -->
+            <p
+              class="d-none d-sm-block"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              Send <span>gorgeous flowers</span>
+            </p>
+            <p
+              class="d-none d-sm-block"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="700"
+            >
+              and create long lasting<br />happy memories
+            </p>
+
+            <!-- Mobile-->
+            <p class="d-sm-none" data-aos="fade-up" data-aos-duration="700">
+              Send <span>gorgeous flowers</span> and create long lasting happy
+              memories
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block block-with-gradient about-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="subtitle">Services</div>
+          <h2>We bring happiness to your home</h2>
+        </div>
+
+        <div class="row">
+          <!-- About Images -->
+          <div class="d-none d-lg-block col-lg-6 about-images">
+            <div class="about-img-wrapper about-img-1">
+              <img class="d-block w-100" src="img/about-01.jpg" alt="" />
+            </div>
+            <div class="about-img-wrapper about-img-2">
+              <img class="d-block w-100" src="img/about-02.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Service Item 1 -->
+            <div class="service-item" data-aos="fade-left">
+              <h4>Flower delivery with care and attention</h4>
+              <p>
+                Lorem ipsum dolor sit amet, dico tempor omittantur in pri. Mei
+                vidit ubique labitur te. Simul animal ad mea, no mea audire
+                aperiam ocurreret.
+              </p>
+            </div>
+
+            <!-- Service Item 2 -->
+            <div class="service-item" data-aos="fade-left" data-aos-delay="200">
+              <h4>Floral arrangements for any event</h4>
+              <p>
+                Simul animal ad mea, no mea audire aperiam ocurreret, an aperiam
+                noluisse cum. Cum eruditi volutpat et, vis ei ignota officiis
+                adipiscing.
+              </p>
+            </div>
+
+            <!-- Service Item 3 -->
+            <div class="service-item" data-aos="fade-left" data-aos-delay="400">
+              <h4>Fresh flowers directly from our flower shop</h4>
+              <p>
+                Habeo nominavi aliquando et per, volutpat ullamcorper
+                complectitur mel cu, pro id consul regione feugiat. Graeco
+                semper iriure eos et, ius an etiam verear eripuit.
+              </p>
+            </div>
+
+            <!-- Service Item 4 -->
+            <div class="service-item" data-aos="fade-left" data-aos-delay="600">
+              <h4>Bouquets for all occasions</h4>
+              <p>
+                Alterum utroque maluisset ea has, sit te purto posse detracto,
+                nusquam consulatu assentior usu ad. No soleat menandri mel, usu
+                et malorum cotidieque. No sit inani pertinacia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block recommendations-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="subtitle">Shop</div>
+          <h2>Our Seasonal Recommendations</h2>
+        </div>
+
+        <div class="row products related-products">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <!-- Product 1 -->
+            <div class="product" data-aos="fade-up">
+              <div class="product-badge badge-best-seller">Best Seller</div>
+              <a
+                href="https://jolie-flowers.amaxcode.com/product.html"
+                class="product-details"
+              >
+                <span class="product-img">
+                  <img class="d-block w-100" src="img/product-01.jpg" alt="" />
+                </span>
+                <span class="product-name">Spring Magic</span>
+              </a>
+
+              <div class="product-price">$65.00</div>
+              <div class="product-actions">
+                <input type="number" value="1" min="1" class="form-control" />
+                <a href="index.html#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <!-- Product 2 -->
+            <div class="product" data-aos="fade-up" data-aos-delay="200">
+              <div class="product-badge badge-offer">Special Offer</div>
+              <a
+                href="https://jolie-flowers.amaxcode.com/product.html"
+                class="product-details"
+              >
+                <span class="product-img">
+                  <img class="d-block w-100" src="img/product-02.jpg" alt="" />
+                </span>
+                <span class="product-name">Summer Fresh</span>
+              </a>
+
+              <div class="product-price"><del>$59.00</del> $49.00</div>
+              <div class="product-actions">
+                <input type="number" value="1" min="1" class="form-control" />
+                <a href="index.html#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-none d-lg-block col-xl-3 col-lg-4">
+            <!-- Product 3 -->
+            <div class="product" data-aos="fade-up" data-aos-delay="400">
+              <a
+                href="https://jolie-flowers.amaxcode.com/product.html"
+                class="product-details"
+              >
+                <span class="product-img">
+                  <img class="d-block w-100" src="img/product-05.jpg" alt="" />
+                </span>
+                <span class="product-name">Easter Flowers</span>
+              </a>
+
+              <div class="product-price">$72.00</div>
+              <div class="product-actions">
+                <input type="number" value="1" min="1" class="form-control" />
+                <a href="index.html#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-none d-xl-block col-xl-3">
+            <!-- Product 4 -->
+            <div class="product" data-aos="fade-up" data-aos-delay="600">
+              <div class="product-badge badge-sold-out">Sold Out</div>
+              <a
+                href="https://jolie-flowers.amaxcode.com/product.html"
+                class="product-details"
+              >
+                <span class="product-img">
+                  <img class="d-block w-100" src="img/product-03.jpg" alt="" />
+                </span>
+                <span class="product-name">To Mum With Love</span>
+              </a>
+
+              <div class="product-price">$62.00</div>
+              <div class="product-actions">
+                <input type="number" value="1" min="1" class="form-control" />
+                <a href="index.html#" class="btn btn-primary disabled"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-banner bg-darken">
+      <div class="container">
+        <div class="event-banner-info">
+          <h3 data-aos="zoom-in-up">Let Us Make Your Wedding Beautiful</h3>
+          <a
+            href="https://jolie-flowers.amaxcode.com/shop.html"
+            class="btn btn-primary btn-large"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block block-with-gradient team-block">
+      <div class="container">
+        <div class="section-head">
+          <div class="subtitle">Our Team</div>
+          <h2>Meet the magicians</h2>
+        </div>
+
+        <div class="row experts">
+          <!-- Team Member 1 -->
+          <div class="col-lg-3 col-sm-6 expert" data-aos="fade-up">
+            <div class="expert-img">
+              <img class="d-block w-100" src="img/florist-01.jpg" alt="" />
+            </div>
+            <div class="expert-name">Anna Davis</div>
+            <div class="expert-position">Florists</div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="col-lg-3 col-sm-6 expert"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="expert-img">
+              <img class="d-block w-100" src="img/florist-02.jpg" alt="" />
+            </div>
+            <div class="expert-name">John Smith</div>
+            <div class="expert-position">Florists</div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="col-lg-3 col-sm-6 expert"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="expert-img">
+              <img class="d-block w-100" src="img/florist-03.jpg" alt="" />
+            </div>
+            <div class="expert-name">Samanta Miller</div>
+            <div class="expert-position">Manager</div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div
+            class="col-lg-3 col-sm-6 expert"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="expert-img">
+              <img class="d-block w-100" src="img/florist-04.jpg" alt="" />
+            </div>
+            <div class="expert-name">Lucy Wilson</div>
+            <div class="expert-position">Florists</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block instagram-content">
+      <div class="container section-head">
+        <div class="subtitle">#JolieFlowers</div>
+        <h2>Follow Us on Instagram</h2>
+      </div>
+
+      <div class="owl-carousel owl-theme instagram-carousel" id="instagram">
+        <!-- Instagram Photo 1 -->
+        <div class="instagram-item blink-on-hover">
+          <img src="img/instagram-01.jpg" alt="" />
+          <div class="instagram-details">
+            <div class="instagram-details-icons">
+              <a
+                href="index.html#"
+                data-toggle="tooltip"
+                data-html="true"
+                data-placement="bottom"
+                title="Go to Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Photo 2 -->
+        <div class="instagram-item blink-on-hover">
+          <img src="img/instagram-02.jpg" alt="" />
+          <div class="instagram-details">
+            <div class="instagram-details-icons">
+              <a
+                href="index.html#"
+                data-toggle="tooltip"
+                data-html="true"
+                data-placement="bottom"
+                title="Go to Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Photo 3 -->
+        <div class="instagram-item blink-on-hover">
+          <img src="img/instagram-03.jpg" alt="" />
+          <div class="instagram-details">
+            <div class="instagram-details-icons">
+              <a
+                href="index.html#"
+                data-toggle="tooltip"
+                data-html="true"
+                data-placement="bottom"
+                title="Go to Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Photo 4 -->
+        <div class="instagram-item blink-on-hover">
+          <img src="img/instagram-04.jpg" alt="" />
+          <div class="instagram-details">
+            <div class="instagram-details-icons">
+              <a
+                href="index.html#"
+                data-toggle="tooltip"
+                data-html="true"
+                data-placement="bottom"
+                title="Go to Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Photo 5 -->
+        <div class="instagram-item blink-on-hover">
+          <img src="img/instagram-05.jpg" alt="" />
+          <div class="instagram-details">
+            <div class="instagram-details-icons">
+              <a
+                href="index.html#"
+                data-toggle="tooltip"
+                data-html="true"
+                data-placement="bottom"
+                title="Go to Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of page content-->
+
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="container">
+          <div class="row footer-info-row">
+            <!-- General Info Column -->
+            <div class="col-lg-3 col-sm-6 footer-info-block">
+              <h6>Flower Shop HTML Template</h6>
+              <p>
+                This elegant template is carefully designed for your Flower
+                Boutique. It is fully responsive and optimized for retina
+                displays, so your website will look wonderful on any platform.
+              </p>
+              <p>
+                Made with <span class="love">❤</span> by
+                <a target="_blank" href="https://amaxcode.com/"
+                  ><span class="underline-hover">AmaxCode</span></a
+                >
+              </p>
+            </div>
+
+            <!-- Contacts Column -->
+            <div class="col-lg-3 col-sm-6 footer-info-block footer-contacts">
+              <h6>Contacts</h6>
+
+              <p>
+                2121 Broadway, New York, NY 10023<br />
+                1-234-567-890<br />
+                1-987-654-321<br />
+                <a href="index.html#"
+                  ><span class="underline-hover"
+                    >contact@yourcompany.com</span
+                  ></a
+                >
+              </p>
+
+              <ul class="footer-social-links">
+                <li>
+                  <a href="index.html#"
+                    ><ion-icon name="logo-facebook"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><ion-icon name="logo-twitter"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><ion-icon name="logo-instagram"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><ion-icon name="logo-youtube"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- More Info Column -->
+            <div class="col-lg-3 col-sm-6 footer-info-block">
+              <h6>More Info</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html#"
+                    ><span class="underline-hover">Shipping</span></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><span class="underline-hover">Returns & Refunds</span></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><span class="underline-hover">FAQ</span></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><span class="underline-hover"
+                      >Work at Jolie Flowers</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><span class="underline-hover">Flower Care</span></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><span class="underline-hover">Privacy Policy</span></a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#"
+                    ><span class="underline-hover">Terms & Conditions</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Newsletter Form Column -->
+            <div class="col-lg-3 col-sm-6 footer-info-block footer-subscribe">
+              <h6>Don't want to miss out?</h6>
+
+              <p>
+                Sign up for our newletter and hear first about exciting
+                promotions.
+              </p>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Email *"
+                  class="form-control newsletter-input"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-full-width btn-primary">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">&copy; Copyright - Jolie Flowers Ltd.</div>
+    </footer>
+
+    <!-- "Live Chat" icon in the bottom right-hand corner -->
+    <div class="chat">
+      <a
+        href="index.html#"
+        class="chat-link"
+        data-toggle="tooltip"
+        data-html="true"
+        data-placement="left"
+        title="Live Chat.<br> Ask us anything!"
+      ></a>
+    </div>
+
+    <div class="phone-popup" id="phonePopup">
+      <p>Need help? Give us a call</p>
+      <div class="phone-number">
+        <ion-icon name="md-call"></ion-icon>1-234-567-890
+      </div>
+      <a href="index.html#" class="close-link" id="closePhonePopup"
+        ><ion-icon name="md-close"></ion-icon
+      ></a>
+    </div>
+
+    <section class="subscribe-popup" id="subscribePopup">
+      <div class="container">
+        <h4>Sign up and save 10% on your first order</h4>
+        <p>And hear first about exciting news and promotions!</p>
+
+        <div class="subscribe-popup-form">
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Email *"
+              class="form-control newsletter-input"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+      <a href="index.html#" class="close-link" id="closeSubscribePopup"
+        ><ion-icon name="md-close"></ion-icon
+      ></a>
+    </section>
+
+    <script src="scripts.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
   </body>
 </html>
